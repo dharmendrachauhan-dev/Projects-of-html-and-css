@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Button Make Already -->
+    <!-- Typing Start Here -->
+
+<div class="container">
+    <div class="f-container">
+        <h1>Job Application <span class="font-size">(Web)</span></h1>
+        <form action="">
+            <div class="formContainer">
+
+                <div class="newInput divCase"> 
+
+                    <div class="inputDetails-1">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstname">
+                </div>
+                <div class="inputDetails-1">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="firstname">
+                </div>
+                <div class="inputDetails-1">
+                    <label for="email" class="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="inputDetails-1">
+                    <label for="jobrole" class="jobrole">Job Role</label>
+                    <select name="jobrole" id="jobrole">
+                        <option name="Frontend" >Select your job role</option>
+                        <option name="Frontend" >Frontend Developer</option>
+                        <option name="Backtend" >Backend Developer</option>
+                        <option name="Full stack" >Full-stack Developer</option>
+                        <option name="Designer" >UX-UI Designer</option>
+                    </select>
+                </div>
+
+                </div>
+                
+                <div class="inputsDetails textDiv">
+                    <label for="Address" class="adjustLabel">Add <br> address</label>
+                    <textarea name="address" id="address" cols="118" rows="3">Dharmendra Chauhan</textarea>
+                </div>
+
+            <div class="useGrid">
+              <div class="inputsDetails">
+                    <label for="city" class="city">City</label>
+                    <input type="text" id="City" name="city">
+                </div>
+                <div class="inputsDetails">
+                    <label for="pincode" class="pinCode">Pin code</label>
+                    <input type="number" id="pincode" name="pincode">
+                </div>
+                <div class="inputsDetails">
+                    <label for="date"  class="date">Date</label>
+                    <input type="date" id="date" name="date" value="2025-11-15">
+                </div>
+                <div class="inputsDetails">
+                    <label for="upload" class="upload">Upload</label>
+                    <input type="file" id="Upload" name="upload" value="2025-11-15">
+                </div>
+              </div>
+            </div>
+
+            <div  class="btn">
+                <button>Apply Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
