@@ -1,0 +1,1 @@
+know more about image full only the screen
