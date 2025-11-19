@@ -1,1 +1,1 @@
-know more about image full only the screen
+Day - 1 Done 

@@ -4,5 +4,48 @@
     box-sizing: border-box;
 }
 
+.img1{
+    background-image: url(./Asset/image1.png);
+    height: 100vh;
 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;   
+}
+
+.overlayText{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.text{
+    background-color: gray;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 5px;
+    font-size: 30px;
+    border-width: thick;
+    border-style: black;
+}
+
+
+
+.img2,
+.img3,
+.img4
+{
+    background-image: url();
+    height: 400px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+}
 
