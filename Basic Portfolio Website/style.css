@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.image{
+    background-image: url(./Asset/developer.png);
+    height: 100vh;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-sm{
+    color: white;
+    font-size: 10px;
+}
+
+.text-xl{
+    color: white;
+    font-size: 30px;
+    margin-top: 25px;
+    position: absolute;
+    right: 40%;
+}
+
+.dev-quote{
+    background-color: black;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-text{
+    font-size: 30px;
+}
+
+.quote-text-2xl{
+    font-size: 50px;
+}
+
+.projectImg{
+    width: 100%;
+}
+
+.projects{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 15px;
+}
+
+.productDescription{
+    font-size:10px;
+}
+
+.content{
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.contact{
+    background-color: green;
+    font-size: 8px;
+    padding: 20px;
+    height: 200px;
+    width: auto;
+}
+
+.about{
+    background-color:  brown;
+    font-size: 8px;
+    padding: 20px;
+    height: 200px;
+    width: auto;
+}
+
+.contact-text, .about-text {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.intro{
+    display: flex;
+}
+
+.textGap{
+    padding-top: 5px;
+}
+
+.endFooter{
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
