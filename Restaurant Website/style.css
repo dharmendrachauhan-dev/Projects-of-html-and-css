@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bar-1,
+.bar-2,
+.bar-3 {
+    height: 4px;
+    width: 25px;
+    background-color: black;
+    margin: 4px;   
+    transition: 0.4s;  
+}
+
+
+.hamburgerBar{
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.logo-container{
+    display: flex;   
+}
+
+.navbar{
+  display: flex;  
+  justify-content: space-between; 
+  margin: 10px 30px 20px 30px;
+}
+
+/* Image Section */
+
+.companyLogo{
+    height: 30px;
+    width: auto;
+}
+
+/* Hero Image */
+
+.hero-img-xl{
+    height: 200px;
+}
+
+
+/* Discount section */
+
+
+.tag { 
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+
+
+.text-lg{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.text-sm{
+    font-size: 10px;
+}
+
+.explore-btn{
+    padding: 8px;
+    background-color: orange;
+    border: 0px;
+    border-radius: 10px 5px 10px 5px;
+    color: white;
+    cursor: pointer;
+}
+
+:hover.explore-btn{
+    background-color: darkorange;
+}
+
+.heroSection{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px 20px 30px;
+}
+
+
+/* Dicount Section */
+
+.discountIcon{
+    width: 50px;
+}
+
+.quality{
+    font-size: 10px;
+    font-weight: 600;
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+}
+
+.quality-text{
+    font-size: 8px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    padding: 0px;
+    color: slategray;
+}
+
+.quality-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+
+.storeQuality{
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+
+/* Menu Section */
+
+.tag-2{
+    width: 50px;
+    font-weight: lighter;
+    font-size: 10px;
+    background-color: green;
+    padding: 8px;
+    color: white;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Using Grid For Pics */
+
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7"
+    ;
+}
+
+
+.items1{
+    grid-area: I1;
+}
+
+.items2{
+    grid-area: I2;
+}
+
+.items3{
+    grid-area: I3;
+}
+
+.items4{
+    grid-area: I4;
+}
+
+.items5{
+    grid-area: I5;
+}
+
+.items6{
+    grid-area: I6;
+}
+
+.items7{
+    grid-area: I7;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
