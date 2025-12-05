@@ -193,3 +193,30 @@ body{
     margin: 0 auto;
     object-fit: cover;
 }
+
+
+/* Footer Section */
+
+.footerhead{
+    font-weight: 400;
+    color: slategray;
+    font-size: large;
+    margin: 2px 0px;
+}
+
+.link{
+    font-weight: 200;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background-color: antiquewhite;
+    padding: 3rem;
+}
