@@ -1,0 +1,50 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text{
+    color: white;
+}
+
+.text-sm{
+    font-size: small;
+}
+
+.text-lg{
+    font-size: large;
+}
+
+.test-xl{
+    font-size: x-large;
+}
+
+/* Navbar Section */
+
+.navBar{
+    background-color: aqua;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navKeys{
+    display: flex;
+    gap: 1em;
+}
+
