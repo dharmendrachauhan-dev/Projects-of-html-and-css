@@ -17,14 +17,14 @@ html{
     font-size: large;
 }
 
-.test-xl{
+.text-xl{
     font-size: x-large;
 }
 
 /* Navbar Section */
 
 .navBar{
-    background-color: aqua;
+    background-color: rgb(102, 102, 247);
 }
 
 .navigation{
@@ -48,3 +48,57 @@ ul{
     gap: 1em;
 }
 
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Hero Section */
+
+.heroImage{
+    background-image: url("./assets/hero_image.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 760px) {
+    
+    .navKeys {
+        display: none;
+        flex-direction: column;
+        background: rgb(235, 152, 92);
+        position: absolute;
+        top: 28px;
+        right: 0;
+        left: 0;
+        max-width: 600px;
+        padding: 1.9em;
+    }
+
+    .navKeys.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger{
+        display: block;
+        color: black
+    }
+
+    .logo{
+        margin: 5px;
+    }
+}

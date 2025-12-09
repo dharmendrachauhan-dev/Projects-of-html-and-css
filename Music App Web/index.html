@@ -9,19 +9,67 @@
 </head>
 
 <body>
-    <nav class="navBar">
+    <!-- Navbar Section -->
+    <nav class="navBar" aria-label="Main Navigation">
         <div class="navigation">
-            <div class="text text-sm">myTunes</div>
+            <div class="logo text text-xl">myTunes</div>
             <div>
-                <ul class="navKeys">
+                <ul class="navKeys" id="navLinks">
                     <li><a href="#" class="text text-sm">Overview</a></li>
                     <li><a href="#" class="text text-sm">Music</a></li>
                     <li><a href="#" class="text text-sm">Video</a></li>
                     <li><a href="#" class="text text-sm">Gift Cards</a></li>
                 </ul>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
             </div>
         </div>
     </nav>
+
+    <!-- Hero Section -->
+
+    <section>
+        <div class="heroImage ">
+            <h1>myTunes</h1>
+            <p>Your Music, movies, and Tv shows take stage.</p>
+            <p>myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have -- and
+                shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and Pc.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle("active");
+        }
+
+        //add dropdown 
+        document.querySelectorAll('#navLinks a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById("navLinks").classList.remove("active")
+            })
+        })
+
+    </script>
 </body>
 
 </html>
