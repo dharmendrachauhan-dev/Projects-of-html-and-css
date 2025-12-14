@@ -1,166 +1,68 @@
-body,
-html{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NO:wght@100..400&family=Science+Gothic:wght@100..900&display=swap');
+
+:root {
+    --purple500: #281154;   ;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.text{
-    color: white;
+html,
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300 ;
+    line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
-.text-sm{
-    font-size: small;
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.text-lg{
-    font-size: large;
+header{
+    background-color: var(--purple500);
 }
 
-.text-xl{
-    font-size: x-large;
-}
-
-.text-xm{
-    font-size: 8px;
-}
-
-/* Navbar Section */
-
-.navBar{
-    background-color: rgb(102, 102, 247);
-}
-
-.navigation{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
-    margin: auto;
+    padding: 15px 0px;
 }
 
-ul li a{
-    text-decoration: none;
+nav, ul{
+    display: flex;
+    gap: 8px;
 }
 
 ul{
-    list-style-type: none;
+    list-style: none;
 }
 
-.navKeys{
-    display: flex;
-    gap: 1em;
+.logo{
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
-}
-
-
-/* Hero Section */
-
-.heroImage{
-    background-image: url("./assets/hero_image.png");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.heroContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;  
-}
-
-#mytunes{
-    margin: 0px;
-}
-
-.heroPara{
-    padding: 0px 20px 0px 20px;
-}
-
-.subImage{
-    background-image: url("./assets/ipad-iphone.png");
-    background-size: cover;
-    height: 300px;
-    width: 400px;
-}
-
-
-.subModel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #6666f7;
-    padding: 10px;
-    height: 100dvh;
-}
-
-.substext{
+a{
+    text-decoration: none;
     color: white;
-
 }
 
-/* 
-h3.subText.music-text{
-    padding-bottom: 0px;
-} */
-
-.music-text
-{
-    margin-bottom: 0px;
+nav ul a li:hover{
+    border-bottom: 1px solid white;
+    border-radius: 0.1rem;
+    transition: 0.2s ease-in-out;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 760px) {
-    
-    .navKeys {
-        display: none;
-        flex-direction: column;
-        background: rgb(235, 152, 92);
-        position: absolute;
-        top: 28px;
-        right: 0;
-        left: 0;
-        max-width: 600px;
-        padding: 1.9em;
-    }
-
-    .navKeys.active{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .hamburger{
-        display: block;
-        color: black
-    }
-
-    .logo{
-        margin: 5px;
-    }
-}

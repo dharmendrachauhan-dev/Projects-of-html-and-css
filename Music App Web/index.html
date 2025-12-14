@@ -7,93 +7,27 @@
     <title>Music App</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
 </head>
-
 <body>
-    <!-- Navbar Section -->
-    <nav class="navBar" aria-label="Main Navigation">
-        <div class="navigation">
-            <div class="logo text text-xl">myTunes</div>
-            <div>
-                <ul class="navKeys" id="navLinks">
-                    <li><a href="#" class="text text-sm">Overview</a></li>
-                    <li><a href="#" class="text text-sm">Music</a></li>
-                    <li><a href="#" class="text text-sm">Video</a></li>
-                    <li><a href="#" class="text text-sm">Gift Cards</a></li>
-                </ul>
-                <button class="hamburger" onclick="toggleMenu()">☰</button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-
-    <section>
-        <div class="heroImage heroContent">
-            <h1 id="mytunes">myTunes</h1>
-            <p class="text-sm ">Your Music, movies, and Tv shows take stage.</p>
-            <p class="text-xm heroPara">myTunes is the best way to organize and enjoy the music, movies, and TV shows
-                you already have -- and
-                shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and Pc.</p>
-        </div>
-    </section>
-
-    <!-- Mid Hero Section -->
-
-    <section>
-        <div class="subModel">
-            <h3 class="substext music-text"> <i class="fa-solid fa-music"></i> Music</h3>
-            <p class="substext text-sm musicPara">45 million songs. Zero ads.</p>
-            <p class="substext text-xm musicPara">Ready whenever your mood shifts.
-                Discover new artists, timeless classics, and hidden gems in seconds.
-                Curate playlists that feel personal—crafted by you, powered by smart discovery.
-                Stream in premium quality, ad-free vibes, and seamless cross-device listening.- Share your soundtrack
-                with friends and let music connect your world.
-            </p>
-            <button class="subscribeBtn">Start Your Trial Now</button>
-            <p class="substext text-sm musicPara">Orange Music is available in myTunes, and for ios and Android devices.</p>
-        </div>
-        <div>
-            <h1 class="subImage"></h1>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle("active");
-        }
-
-        //add dropdown 
-        document.querySelectorAll('#navLinks a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById("navLinks").classList.remove("active")
-            })
-        })
-
-    </script>
+    <header>
+        <nav class="container">
+            <div class="logo"> MyTunes </div>
+            <ul>
+                <a href="#hero">
+                    <li>Overview</li>
+                </a>
+                <a href="#music">
+                    <li>Music</li>
+                </a>
+                <a href="#video">
+                    <li>Video</li>
+                </a>
+                <a href="#gift">
+                    <li>Gift</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>
