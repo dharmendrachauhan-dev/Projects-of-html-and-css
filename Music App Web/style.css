@@ -24,13 +24,18 @@ body{
 }
 
 
-.container{
-    max-width: 800px;
+.nav-container{
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 header{
-    background-color: var(--purple500);
+    background-color: var(--purple600);
+    position: sticky;
+    top:0;
+    z-index: 100;
+    opacity: 0.7;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 nav{
@@ -42,7 +47,7 @@ nav{
 
 nav, ul{
     display: flex;
-    gap: 8px;
+    gap: 25px;
 }
 
 ul{
@@ -52,17 +57,42 @@ ul{
 .logo{
     font-size: 20px;
     font-weight: 500;
+    color: white;
 }
 
 a{
     text-decoration: none;
     color: white;
+    gap: 20px;
 }
 
-nav ul a li:hover{
-    border-bottom: 1px solid white;
-    border-radius: 0.1rem;
-    transition: 0.2s ease-in-out;
+nav ul li a {
+    border-bottom: 1px solid transparent;
+    transition: 0.5s ease-in-out;  
 }
 
+nav ul li a:hover{
+    border-bottom: 1px solid white;   
+}
 
+.hero-section{
+   background-image: url("./assets/hero_image.png"); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   display: grid;
+   color: white;
+   place-items: center;
+   text-align: center;
+}
+
+.hero-secton,
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.hero-section h1{
+    font-size: 80px;
+}
