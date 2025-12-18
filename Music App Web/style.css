@@ -23,12 +23,15 @@ body{
     scroll-behavior: smooth;
 }
 
+section{
+    scroll-margin: 58px;
+}
 
-.nav-container{
+
+.container{
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 
 header{
@@ -47,7 +50,7 @@ nav{
     padding: 15px 0px;
 }
 
-nav, ul{
+.container, .links{
     display: flex;
     gap: 25px;
 }
@@ -117,6 +120,7 @@ button:hover{
 .music-container{
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .music-section{
@@ -140,6 +144,78 @@ button:hover{
 }
 
 .primary-btn{
-    background: var(--red600);
+    background-color: var(--red600);
     color: white;
+}
+
+.secondary-btn{
+    background-color: var(--purple300);
+    color: white;
+}
+
+
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.video-section{
+    background-image: url(./assets/video.png);
+    min-height: 700px;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 40px;
+    color: white;
+}
+
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.footer-upper{
+    background-color: var(--purple500);
+    padding: 20px;
+}
+
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer-upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.footer-lower{
+    background-color: var(--purple600);
+    padding: 20px;
+    text-align: center;
+    color: white;
+
 }
