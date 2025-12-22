@@ -116,3 +116,61 @@ aside {
     font-size: 15px;
     margin-top: -5px;
 }
+
+.bars{
+    margin-top: 20px;
+}
+
+.main-container{
+    width: 100%;
+}
+
+main{
+    min-height: 100vh;
+    background-color: lightgrey;
+    border-radius: 1.25rem;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-container{
+    background-color: white;
+    border-radius: 1.25rem;
+    width: 400px;
+    padding: 10px;
+}
+
+.content-name{
+    display: flex;
+    justify-content: ceneter;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.content h3{
+    font-size: 15px;
+    color: black;
+}
+
+.content .channel-name{
+    font-size: 13px;
+    font-weight: 900;
+    color: rgb(78, 79, 81);
+}
+
+.content-status{
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+}
+
+main .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding:15px;
+}
+
